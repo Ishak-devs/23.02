@@ -5,6 +5,6 @@ def djangorocks(request):
 
     return HttpResponse("C\est django, Django!")
 
-def picturedetails(response, category):
-    body = f"Voici les détails de l'image dans la catégorie {category}."
-    return HttpResponse(body)
+def picturedetails(request, category):
+    body = "Category={}".format(category)
+        return HttpResponse(body)
