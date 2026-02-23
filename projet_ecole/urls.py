@@ -21,5 +21,6 @@ from projet_scolaire import views as projet_scolaire_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', views.index),
+    path('hello/', apptwo_views.index),
+    path('picture_details/<str:category>/', apptwo_views.picturedetails),
 ]

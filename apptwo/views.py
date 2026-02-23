@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.http import HttpResponse
 # Create your views here.
 def djangorocks(request):
 
@@ -7,4 +7,7 @@ def djangorocks(request):
 
 def picturedetails(request, category):
     body = "Category={}".format(category)
-        return HttpResponse(body)
+    return HttpResponse(body)
+
+def index(request):
+    return HttpResponse("Hello, world!")
