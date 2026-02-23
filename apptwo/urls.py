@@ -16,13 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from apptwo import views as apptwo_views
+# from apptwo import views as apptwo_views
 from projet_scolaire import views as projet_scolaire_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', apptwo_views.index),
-    path('picture_details/<str:category>/', apptwo_views.picturedetails),
-    path('picture_details/<str:category>/<int:year>/', apptwo_views.picturedetails),
-    path('picture_details/<str:category>/<int:year>/<int:month>/', apptwo_views.picturedetails),
 ]
